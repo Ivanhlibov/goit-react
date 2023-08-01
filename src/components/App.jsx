@@ -1,16 +1,13 @@
-export const App = () => {
+
+
+import {Alert} from './src./components/Alert/Alert.jsx';
+
+export  const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+    <>
+    <Alert type ='error'/>
+    <Alert type ='success'/>
+    <Alert type ='warning'/>
+    </>
+  )
 };
